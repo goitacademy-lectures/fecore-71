@@ -1,0 +1,49 @@
+$breakpoint: (
+  phone: 480px,
+  tablet: 768px,
+  desktop: 1200px,
+);
+
+.container {
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  // phone screen 0px & >
+  max-width: 480px;
+  padding-left: 31px;
+  padding-right: 31px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // tablets screen 768px & >
+  // @media screen and (min-width: 768px) {
+  //   max-width: 768px;
+  //   padding-left: 39px;
+  //   padding-right: 39px;
+  // }
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @include mq(tablet-only) {
+    max-width: 768px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  // desktop screen 1200px & >
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1200px;
+  //   padding-right: 15px;
+  //   padding-left: 15px;
+  // }
+
+  @include mq(desktop) {
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

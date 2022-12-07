@@ -5,9 +5,6 @@ $breakpoint: (
 );
 
 .container {
-  outline: 2px solid red;
-  outline-offset: -2px;
-
   // phone screen 0px & >
   max-width: 480px;
   padding-left: 31px;

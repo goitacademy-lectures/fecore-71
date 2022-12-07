@@ -3,7 +3,7 @@
   padding-bottom: $pb;
 }
 
-@mixin fonts($size: false, $colour: false, $weight: false, $lh: false, $ls: 0.1em) {
+@mixin fonts($size: false, $lh: false, $weight: false, $ls: 0.1em, $color: false) {
   @if $size {
     font-size: $size;
   }
@@ -16,8 +16,8 @@
   @if $ls {
     letter-spacing: $ls;
   }
-  @if $colour {
-    color: $colour;
+  @if $color {
+    color: $color;
   }
 }
 
